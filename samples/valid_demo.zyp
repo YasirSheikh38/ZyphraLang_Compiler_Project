@@ -1,0 +1,26 @@
+## Valid ZyphraLang program
+wholenumber a :=> 5;
+wholenumber b :=> 7;
+wholenumber c :=> a ~*~ b;
+
+echoOut("Product is:");
+echoOut(c);
+
+whenTrue (c >>? 20) {
+    echoOut("c is big");
+} elseWay {
+    echoOut("c is small");
+}
+
+spin (wholenumber i :=> 0; i ?<< 3; i :=> i ~+~ 1) {
+    echoOut(i);
+}
+
+craft square(n) {
+    giveBack n ~*~ n;
+}
+
+wholenumber s :=> square(9);
+echoOut(s);
+
+stopZy;

@@ -1,0 +1,2 @@
+wholenumber x :=> 5
+echoOut(x);
